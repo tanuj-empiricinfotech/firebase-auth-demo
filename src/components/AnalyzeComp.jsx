@@ -85,7 +85,7 @@ const AnalyzeComp = ({ isDropDownVisible }) => {
       )}
       <Button
         onClick={handleAi}
-        isDisabled={!(value?.length > 3 && filesSelected)}
+        isDisabled={!(value?.length > 300 && dropzoneRef.current?.files?.length)}
         colorScheme="green"
       >
         Analyze
